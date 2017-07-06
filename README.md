@@ -1,2 +1,2 @@
 # angular-ui-pagination
-angular-ui-pagination angularJs  分页。
+angular-ui-pagination angularJs  分页控件。
