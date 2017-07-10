@@ -8,26 +8,41 @@ Include 'javascript' and 'css' files into your page.
 
 
 Declare a dependency on the module.
----js
+
+
+```js
 angular.module('myModule',['angular-ui-pagination']);
+```
+
 
 Insert the pagination in your html template
 Default pagination 
 
+```html
 <div class="row">
 	<div class="col-12">
 		<ui uipagination total-items="totalItems" ng-model="currentPage" class="pagination" ng-change="pageChanged()"></ui>
 	</div>
 </div>
+```
+
 
 maxSize pagination
+
+
+```html
 <div class="row">
 	<div class="col-12">
 		<ui uipagination total-items="totalItems" max-size="maxSize" ng-model="currentPage" class="pagination" ng-change="pageChanged()"></ui>
 	</div>
 </div>
+```
+
 
 ## Design
+
+
+```css
 You can completely change the design if you want.
 .pagination {
     margin-top: 0;
@@ -46,7 +61,7 @@ You can completely change the design if you want.
     border-color: #37a884 !important;
     background-color: #37a884 !important;
 }
-
+```
 
 ## How to Use
 
