@@ -8,16 +8,9 @@
 <center>
     <div ng-controller="PaginationDemoCtrl">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12">
                 <h4>基本款分页</h4>
-                <ui uipagination total-items="totalItems" template-Url="./template/pagination.html"></ui>
-            </div>
-            <div class="col-6">
-                <h4>高级版</h4>
-                <!--<ul uib-pagination total-items="totalItems" ng-model="currentPage" class="pagination-sm" ></ul> <br>-->
-                <!--<ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul> <br>-->
-                <!--<ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul> <br>-->
-                <!--<pre>Page: {{bigCurrentPage}} / {{numPages}}</pre>-->
+                <ui uipagination total-items="totalItems" ng-model="currentPage" class="pagination"></ui>
             </div>
         </div>
     </div>
