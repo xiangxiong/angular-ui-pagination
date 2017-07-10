@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Angular-Ui-Pager</title>
+    <title>Angular-Ui-Pagination</title>
 </head>
 <body ng-app="app" >
 <center>
-    <div ng-controller="PaginationDemoCtrl">
+    <div ng-controller="PaginationCtrl">
         <div class="row">
             <div class="col-12">
                 <h4>基本款分页</h4>
-                <ui uipagination total-items="totalItems" ng-model="currentPage" class="pagination"></ui>
+                <ui uipagination total-items="totalItems" ng-model="currentPage" class="pagination" ng-change="pageChanged()"></ui>
             </div>
         </div>
     </div>

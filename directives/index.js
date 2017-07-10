@@ -4,4 +4,4 @@
 import '../factory/paging.factory';
 import './pagination.directive.js';
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../app.css';
+import '../angular-ui-pagination.css';

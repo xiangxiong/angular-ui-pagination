@@ -15,7 +15,6 @@ angular.module("angular-ui-pagination",['angular-ui-paging'])
     function getPages(currentPage,totalPages){
         var pages = [];
         var starPage = 1,endPage = totalPages;
-
         // 添加页面链接
         for(var number = starPage; number<= endPage; number++){
             var page = makePage(number,number,number === currentPage);
@@ -53,10 +52,10 @@ angular.module("angular-ui-pagination",['angular-ui-paging'])
         require:['uipagination','?ngModel'],
         restrict:'A',
         controller:'uiPaginationController',
-        templateUrl:function (element, attrs){
+        templateUrl:function (element,attrs){
             return attrs.templateUrl || '../template/pagination.html';
         },
-        link:function (scope,element,attrs,ctrls) {
+        link:function (scope,element,attrs,ctrls){
             var paginnationCtrl = ctrls[0],ngModelCtrl = ctrls[1];
             if(!ngModelCtrl){
                 return;

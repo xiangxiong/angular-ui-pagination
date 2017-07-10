@@ -7,9 +7,11 @@
 <li role="menuitem" ng-repeat="page in pages track by $index"
     ng-class="{active: page.active,disabled: ngDisabled&&!page.active}"
     class="pagination-page">
-    <a href ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&&!page.active" uib-tabindex-toggle>{{page.text}}</a></li>
+    <a href ng-click="selectPage(page.number, $event)" ng-disabled="ngDisabled&&!page.active" uib-tabindex-toggle>{{page.text}}</a>
+</li>
 <li class="pagination-next" ng-class="{disabled:noNext() || ngDisabled}">
-    <a href ng-click="selectPage(page+1,$event)" ng-disabled="noNext() || ngDisabled">{{getText('next')}}</a></li>
+    <a href ng-click="selectPage(page+1,$event)" ng-disabled="noNext() || ngDisabled">{{getText('next')}}</a>
+</li>
 <li class="pagination-last" ng-class="{disabled: noNext() || ngDisabled}">
     <a href ng-click="selectPage(totalPages,$event)" ng-disabled="noNext() || ngDisabled">{{getText('last')}}</a>
 </li>
