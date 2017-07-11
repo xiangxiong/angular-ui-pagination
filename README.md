@@ -1,6 +1,10 @@
 # angular-ui-pagination
 angular-ui-pagination 分页 / AngularJS 分页 / pagination
 
+Supported by all modern browsers: Chrome, Firefox, Opera, Safari, IE8+
+
+![YoomJS](https://github.com/xiangxiong/angular-ui-pagination/blob/master/pagination.jpg)
+
 ## Installation
 Download the package from github. The package is also availble over npm install angular-ui-pagination or bower install angular-ui-pagination
 
