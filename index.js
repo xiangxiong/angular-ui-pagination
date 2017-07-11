@@ -19,7 +19,7 @@ function PaginationCtrl($scope, $http) {
     };
 
     // 初始化
-    $scope.init = function () {
+    $scope.init = function () { 
         query($scope.viewModel.currentPage);
     }
 
