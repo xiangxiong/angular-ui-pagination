@@ -51,7 +51,7 @@ You can completely change the design if you want.
 ```
 
 ## How to Use
-``` controller (index.js)
+``` js
 var ngApp = angular.module('app', ['angular-ui-pagination']);
 PaginationCtrl.$inject = ['$scope','$http'];
 function PaginationCtrl($scope, $http) {
@@ -74,7 +74,7 @@ function PaginationCtrl($scope, $http) {
     var query = function (currentPage) {
         var  request = {
             method: 'POST',
-            url: 'http://172.29.20.30:8080/qyjApi/bk/oper/getAdvertList',
+            url: 'xxx',
             data: { pageNo: currentPage, pageSize: 10 }
         };
 
