@@ -6,11 +6,11 @@
 </head>
 <body ng-app="app" >
 <center>
-    <div ng-controller="PaginationCtrl">
+    <div ng-controller="PaginationCtrl" ng-init="init()">
         <div class="row">
             <div class="col-12">
                 <h4>基本款分页</h4>
-                <ui uipagination total-items="totalItems" ng-model="currentPage" class="pagination" ng-change="pageChanged()"></ui>
+                <ui uipagination total-items="viewModel.totalItems" ng-model="viewModel.currentPage" class="pagination" ng-change="pageChanged()"></ui>
             </div>
         </div>
     </div>
